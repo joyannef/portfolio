@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio: Joy-anne</title>
+		<base href="https://joyanne-designs-portfolio.firebaseapp.com">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+		/> -->
+		<link href="portfolio-dark-mode.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	</head>
+	<body>
+		<!-- NAVIGATION BAR -->
+		<div id="bar">
+			<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+				<!-- <div id="button-ctn">
+					<button id="dark-mode"><i id="test" class="bi bi-moon" onclick="getData()"></i>MODE </i></button>
+				</div>  -->
+				<a href="#about" class="text-nowrap">ABOUT ME</a>
+				<a href="#portfolio">PORTFOLIO</a>
+				<a href="#designs">DESIGNS</a>
+				<a href="#contact">CONTACT</a>
+			</nav>
+		</div>
+
+		<!-- ABOUT ME -->
+		<section id="about">
+			<div class="scroll"></div>
+			<div class="about-content">
+				<h1>JOY-ANNE FOSTER</h1>
+				<h2>WEB DEVELOPER & DESIGNER</h2>
+				<p>Developer and designer based in Palm Beach, Florida</p>
+				<div id="my_image">
+					<!-- <img src="My-pic.png" alt="An image of myself." /> -->
+				</div>
+			</div>
+		</section>
+		<section id="container-about">
+			<div id="about_me">
+				<p class="me">
+					Hi, I'm Joy-Anne. I am a designer and web developer who
+					seeks to create innovative designs. I am particulary a fan
+					of minimalistic creations, but also like to infuse a bit of
+					spice to this design style. Currently on the prowl for a new
+					opportunity that is design focused and fosters creative
+					thinking.
+				</p>
+				<p id="icon-head">What I know</p>
+			</div>
+			<div class="floating-images">
+				<img src="python_icon.jpeg" />
+				<img src="c_icon.jpeg" />
+				<img src="ai_icon.jpeg" />
+				<img src="ps_icon.jpeg" />
+				<img src="js_icon.jpeg" />
+				<img src="html_icon.jpeg" />
+				<img src="css_icon.jpeg" />
+			</div>
+		</section>
+
+		<!-- PORTFOLIO -->
+		<section id="portfolio">
+			<div class="scroll"></div>
+			<h1>PORTFOLIO</h1>
+			<div class="cards">
+				<!-- Will contain cards of my work. -->
+				<div id="card-1">
+					<a
+						href="#sidebar"
+						class="d-block"
+						data-bs-toggle="offcanvas"
+						role="button"
+						aria-controls="sidebar"
+					>
+						<img src="nucamp_icon.png"
+					/></a>
+					<h2>CAMPSITE WEBSITE</h2>
+				</div>
+				<div id="card-2">
+					<a
+						href="#sidebar2"
+						class="d-block"
+						data-bs-toggle="offcanvas"
+						role="button"
+						aria-controls="sidebar"
+					>
+						<img src="caf_icon.png"
+					/></a>
+					<h2>RESTAURANT REWORK</h2>
+				</div>
+				<div id="card-3">
+					<a
+						href="#sidebar3"
+						class="d-block"
+						data-bs-toggle="offcanvas"
+						role="button"
+						aria-controls="sidebar"
+					>
+						<img src="portfolio-img.png"
+					/></a>
+					<h2>PORTFOLIO</h2>
+				</div>
+			</div>
+			<div class="image-picker">
+				<!-- Will contain a display of the website chosen in cards. -->
+			</div>
+		</section>
+
+		<!-- offcanvas -->
+		<div
+			class="offcanvas offcanvas-bottom"
+			tab-index="-1"
+			id="sidebar"
+			aria-labelledby="sidebar-label"
+		>
+			<div class="offcanvas-header">
+				<h3 class="offcanvas-title">CAMPSITE WEBSITE</h3>
+				<button
+					type="button"
+					class="btn-close bg-info"
+					data-bs-dismiss="offcanvas"
+					aria-label="close"
+				></button>
+				<p class="camp-detail">
+					Fictional camping website currently in the works. This site
+					is being programmed in HTML, CSS and Bootstrap.
+				</p>
+			</div>
+		</div>
+
+		<div
+			class="offcanvas offcanvas-end"
+			tab-index="-1"
+			id="sidebar2"
+			aria-labelledby="sidebar-label"
+		>
+			<div class="offcanvas-header">
+				<div class="offcanvas-title">
+					<h3 class="rest-heading">RESTAURANT REWORK</h3>
+					<button
+						type="button"
+						class="btn-close bg-info rest-button"
+						data-bs-dismiss="offcanvas"
+						aria-label="close"
+					></button>
+				</div>
+				<div class="offcanvas-body">
+					<video id="rest" width="360" height="220" controls>
+						<source src="Restaurant_vid.mp4" type="video/mp4" />
+					</video>
+					<h4 class="original-title">Original Site</h4>
+					<p class="original-detail">
+						The Café du Commerce restaurant is a Parisian bistrot in
+						the neighbourhood I resided in whilst in Paris. When
+						looking at the restaurant's original site, I wanted to
+						reimagine it to be modern with classic elements while
+						still conveying the restaurants theme of rich gold and
+						reds, with grey undertones.
+					</p>
+					<video id="rest-rework" width="360" height="220" controls>
+						<source
+							src="Restaurant_rework_vid.mp4"
+							type="video/mp4"
+						/>
+					</video>
+					<h4 class="rework-title">Rework</h4>
+					<p class="rework-detail">
+						Created as a static site, I was able to produce the
+						rework with HTML, CSS and Javascript. A combination of
+						serif and sans-serif font aided in creating a modern yet
+						classic looking site.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="offcanvas offcanvas-start"
+			tab-index="-1"
+			id="sidebar3"
+			aria-labelledby="sidebar-label"
+		>
+			<div class="offcanvas-header">
+				<h3 class="offcanvas-title">PORTFOLIO</h3>
+				<button
+					type="button"
+					class="btn-close bg-info"
+					data-bs-dismiss="offcanvas"
+					aria-label="close"
+				></button>
+				<p class="portfolio-detail1">
+					This portfolio was first created by planning out its
+					contents in Figma. The final product deviates slightly from
+					the original design, but still incorporates vivid blues over
+					a black background.
+				</p>
+				<img id="fig-portfolio" src="fig-portfolio.png" />
+				<img id="fig-portfolio2" src="fig-portfolio2.png" />
+				<p class="portfolio-detail2">
+					HTML, CSS and Bootstrap were used to create this site.
+				</p>
+			</div>
+		</div>
+
+		<!-- DESIGNS -->
+		<section id="designs">
+			<div class="scroll"></div>
+			<h1>DESIGNS</h1>
+			<div class="row row-content">
+				<div class="col-md-6 mx-auto">
+					<div id="slideShow" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner -center">
+							<div class="carousel-item active">
+								<img class="d-block w-100 pattern1" src="pattern1.png">
+							</div> 
+							<div class="carousel-item">
+								<img class="d-block w-100" src="HALF-FACE.png">
+							</div> 
+							<div class="carousel-item">
+								<img class="d-block w-100 khal " src="KHAL.png">
+							</div>
+						</div>
+					 </div>
+				</div>
+		</section>
+
+		<!-- CONTACT -->
+		<section id="contact">
+			<div class="scroll container"></div>
+			<div class="contact-box">
+				<h2>GET IN CONTACT</h2>
+				<p>
+					I would like to work with you! If you think we are a match,
+					leave a message about your company or project below.
+				</p>
+				<form
+					action="https://formsubmit.co/6967c0d3b51d2cd2359541d018fb5cbc"
+					method="POST"
+				>
+					<label for="text" name="text"></label>
+					<input
+						type="text"
+						name="Name"
+						class="text"
+						placeholder="Your Name"
+					/><br />
+					<label for="email" name="email"></label>
+					<input
+						type="email"
+						name="Email"
+						class="email"
+						placeholder="your@email.com"
+					/><br />
+					<textarea
+						name="Message"
+						cols="40"
+						rows="20"
+						placeholder="Write your message here."
+					></textarea
+					><br />
+					<input type="submit" name="send" class="submit" />
+				</form>
+				<div class="container-buttons">
+					<button>Download CV</button>
+					<a href="https://github.com/joyannef"><button>Go to Github</button></a>
+				</div>
+			</div>
+			<div class="gradient"></div>
+		</section>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+</html>

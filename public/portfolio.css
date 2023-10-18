@@ -1,0 +1,280 @@
+/* GENERAL */
+body {
+  font-family: "Inter";
+  color: rgb(47, 47, 47);
+  height: 100%;
+}
+
+#about,
+#illustrations {
+  text-align: right;
+}
+
+h2 {
+  margin-top: -10px;
+  font-size: 95%;
+  color: rgb(38, 38, 38);
+  font-weight: 300;
+}
+
+p {
+  margin-top: -12px;
+}
+
+section {
+  margin-bottom: 200px;
+}
+
+.scroll {
+  display: grid;
+  height: 100px;
+}
+
+/* NAVIGATION BAR */
+#bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 70px;
+  position: fixed;
+  z-index: 1;
+  top: -20px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  border: 4px solid #2565a19f;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: -10px 2px 9px 0px lightgray;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(38, 38, 38);
+  padding-right: 90px;
+  font-size: 18px;
+  font-family: "Open sans";
+  font-weight: 800;
+}
+
+nav {
+  margin-top: 80px;
+}
+
+nav a:hover {
+  color: #7e7f80a8;
+}
+
+nav button {
+  padding: 10px;
+}
+
+#dark-mode {
+  padding: 8px;
+  margin-top: 30px;
+  position: relative;
+  left: -150px;
+  font-size: 12px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(206, 249, 250, 0.22),
+    rgb(186, 225, 243)
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color: rgb(141, 138, 138);
+  letter-spacing: 0.4mm;
+  border: 0;
+}
+
+#dark-mode:hover {
+  cursor: grab;
+}
+
+#dark-mode:active {
+  background-image: linear-gradient(90deg, rgb(84, 147, 189), rgb(41, 89, 148));
+  color: white;
+}
+
+/* ABOUT ME  */
+#about {
+  margin-top: 150px;
+}
+
+.about-content {
+  margin: 0;
+  background-color: #77cfe569;
+  border-radius: 20px;
+  padding: 30px;
+  background-image: url("Pattern1.png");
+  background-repeat: repeat-y repeat-x;
+  background-position: right;
+  background-size: 800px;
+}
+
+#my_image {
+  width: 200px;
+  height: 200px;
+  background-image: url("My-pic.png");
+  background-size: cover;
+  position: relative;
+  left: 80%;
+  opacity: 90%;
+  border-radius: 100%;
+  box-shadow: 0px 5px 50px 8px rgba(223, 222, 222, 0.932);
+}
+
+#about h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+#about h2 {
+  font-size: 20px;
+  color: grey;
+}
+
+#about p {
+  color: rgb(68, 67, 67);
+  margin-top: 10px;
+}
+
+/* PORTFOLIO */
+
+/* ILLUSTRATIONS  */
+
+/* CONTACT */
+#contact {
+  background-image: url("Pattern1.png");
+  background-repeat: repeat-y repeat-x;
+  background-position: right top;
+  background-size: 400px;
+}
+
+.contact-box {
+  display: grid;
+  position: relative;
+  left: 30%;
+  background-color: rgba(230, 242, 250, 0.874);
+  border-radius: 15px;
+  width: 510px;
+  padding: 20px;
+  height: 570px;
+  margin-bottom: 150px;
+}
+#contact h2 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: bold;
+  color: #358ad99f;
+}
+
+#contact p {
+  margin-top: 0px;
+  color: rgb(100, 99, 99);
+}
+.email,
+.text {
+  border: 2px solid #2565a19f;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 300px;
+  margin-bottom: 20px;
+  outline-width: 0;
+  background-color: #ffffff00;
+}
+
+.email::placeholder,
+.text::placeholder {
+  opacity: 50%;
+}
+textarea::placeholder {
+  opacity: 50%;
+}
+
+textarea {
+  border-radius: 5px;
+  border-color: black;
+  border: 3px solid black;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  width: 500px;
+  resize: none;
+  outline-width: 0;
+}
+
+#contact button {
+  height: 40px;
+  width: 155px;
+  border-radius: 20px;
+  margin-right: 27px;
+  border: 3px solid black;
+  background-color: white;
+  margin-bottom: 0px;
+}
+
+.submit {
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 200px;
+  margin-bottom: 70px;
+  font-family: "Inter";
+  color: white;
+  box-shadow: 1px 1px 4px 1px #77cfe5;
+  background-image: linear-gradient(150deg, #358ad99f, #77dae5);
+}
+
+.submit:hover {
+  background-image: linear-gradient(to right, #92e9f3df, #92e9f3df);
+  cursor: grab;
+}
+
+.submit:hover:active {
+  background-image: linear-gradient(to right, #c1f1f8df, #c1f1f8df);
+}
+
+#contact button:hover {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  cursor: grab;
+  transition: 0.5s;
+  box-shadow: 1px 2px 16px 4px rgba(144, 143, 143, 0.72);
+}
+
+#contact button:hover:active {
+  background-color: rgba(100, 98, 98, 0.627);
+  border: none;
+  transition: 0ms;
+  box-shadow: none;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gradient {
+  display: grid;
+  width: 1500px;
+  height: 300px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    #60afdace,
+    #4484a6df
+  );
+  bottom: -100px;
+  left: -10px;
+  position: relative;
+  bottom: -250px;
+  margin-top: -250px;
+}
